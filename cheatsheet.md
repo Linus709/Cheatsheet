@@ -10,5 +10,11 @@ Python
 - tree: viser hva som er inne i mappen din
 - tree /f: viser tydelig mer av mappen din
 
+SSH Python windows
+- ssh-keygen -t ed25519 -C "linusjegleimlirhus@gmail.com": lager ssh key 
+- dir /a: viser skjulte filer
+- cd .ssh: åpner den skjulte filen som skrevet der åpner ssh
+- more (filnavn inni ssh fil med dir): 
+
 
 
