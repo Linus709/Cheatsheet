@@ -14,3 +14,5 @@ ofte lurt og kjøre disse to linjer først for og få siste programvare
 - ping -c 3 8.8.8.8: sjekker om internett ditt funker ser du time og bytes er det bra
 - ssh linus@10.200.3.16: åpner windows husk riktig navn til enhet og ip addresse
 - git clone git@github.com:Linus709/oppgaveigithubssh.git: kloner ssh key nettadresse på repo 
+- nano: åpner opp github repo
+-  sudo ufw allow 8080/tcp: åpner brannmur gir accses til localhost så nettside kan åpnes.

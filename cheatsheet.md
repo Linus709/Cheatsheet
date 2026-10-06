@@ -1,5 +1,5 @@
 # windows
-Python
+terminal windows
 - dir - står for mappe: viser alle filer og mapper i den mappen du står i
 - cd mappenavn - komando betyr change directory: går inn i mappen
 - cd .. - gå en mappe tilbake
@@ -10,7 +10,7 @@ Python
 - tree: viser hva som er inne i mappen din
 - tree /f: viser tydelig mer av mappen din
 
-SSH Python windows
+SSH terminal windows
 - ssh-keygen -t ed25519 -C "linusjegleimlirhus@gmail.com": lager ssh key 
 - dir /a: viser skjulte filer
 - cd .ssh: åpner den skjulte filen som skrevet der åpner ssh
