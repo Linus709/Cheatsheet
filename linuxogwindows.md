@@ -12,7 +12,11 @@ ofte lurt og kjøre disse to linjer først for og få siste programvare
 - ls -a: viser skjulte filer på linux som eksempel ssh key
 - systemctl status ssh: sjekker om windows og linux er tilkoblet sammen
 - ping -c 3 8.8.8.8: sjekker om internett ditt funker ser du time og bytes er det bra
-- ssh linus@10.200.3.16: åpner windows husk riktig navn til enhet og ip addresse
+- ssh linus@ipadresseher: åpner windows husk riktig navn til enhet og ip addresse
 - git clone git@github.com:Linus709/oppgaveigithubssh.git: kloner ssh key nettadresse på repo 
 - nano: åpner opp github repo
 -  sudo ufw allow 8080/tcp: åpner brannmur gir accses til localhost så nettside kan åpnes.
+- ipconfig: Viser internett informasjon
+
+PI login
+- ssh linus@10.200.3.16
