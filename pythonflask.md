@@ -3,9 +3,5 @@
 - pip list: viser hva jeg har lastet ned på pcen min 
 - .filnavnpåvirtueltmiljø\Scripts\activate: shortcut for å starte virtuelle miljøet jeg har lagd
 - from flask import Flask: alltid på toppen så flask er lasta ned i vscode
+- render_template: templates gjør så jeg kan redigere nettsider med html og ikke bare ha hello world
 
-Linux python
-- sudo apt install python3-venv: Laster ned python på linux
-- sudo apt install python3-pip: laster ned pip
--  python3 -m venv .prosjekt: lager virtuelt miljø på linux
-- source .filnavndubestemmer/bin/activate
