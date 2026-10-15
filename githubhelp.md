@@ -19,7 +19,7 @@ Siste kode pushe filene inn til github repo
 - git push -u origin main: Push your files and set the default upstream branch
 
 vanlig bruk etter oppsett av repo(altså oppdatere endringer osv)
-- git pull
+- git init
 - git add .
 - git commit -m "skriv noe her"
 - git push

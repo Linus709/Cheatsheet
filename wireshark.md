@@ -1,0 +1,4 @@
+- ip.src == din.ip.adresse.her: viser kun trafikken der min ip er kilden
+- ip.dst == din.ip.adresse.her: viser kun trafikken som kommer til min datamaskin
+- ip.addr == din.ip.adresse.her: viser alt av trafikken på ip.adressen min
+- tls:  
