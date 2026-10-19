@@ -29,3 +29,14 @@ Vi sender med tre ting: url-en (hvor den skal), json={'query': query} (selve rei
 - response.json()gjør om rå tekst behandlingen til vi fikk fra serveren til et ekte python format eller ordliste enklere.
 - print(): veldig viktig så faktsik vi skriver ut hele resultatet i terminal
 
+ruterapi hjelp
+- date time komando forklaring
+- 2026-10-15: Datoen for reisen (År-Måned-Dag).
+- T: En bokstav som brukes som en standard separator mellom dato og klokkeslett.
+- 11:47:42: Klokkeslettet (Timer:Minutter:Sekunder).
+- .954: Millisekunder
+- +02:00: Tidssonen. Dette betyr at tidssonen ligger 2 timer foran UTC (koordinert universell tid), som er sommertid i Norge.
+
+
+- ting jeg fjerna fra koden fra ruter
+place: "NSR:StopPlace:385"
