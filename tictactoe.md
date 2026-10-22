@@ -76,8 +76,73 @@ rows = [
 
 step13 
 - def is_valid_move(Self,move): this code def checks if your move is legal in the game 
-- row, col = move.row, move.col: 
+- row, col = move.row, move.col: thid code reveals/unpacks the the numbers for row and column so i can click were i want to
+- move_was_not_played = self._current_moves[row][col].label == "": this code just checks were you clicked that there is not a x or o there so the game doesnt bug
+- no_winner = not self.has_winner: this is the last code and it is just cheking if the game is over og still going on also so the game doesnt bug.
+return no_winner and move_was_not_played: just confirming so code understands and game moves on or ends.
 
+step14
+- def process_move(self, move): this code def code is to check if anyone have won the game when there is no more places to click.
+- row, col = move.row, move.col: this code is just to get the cordinates from input move 
+- self._current_moves[row][col] = move: this code just checks makes sure so the game remebers the clicks that have been made
+- for combo in self._winning_combos:this code just takes a loop to check all wining combinations from last step.
+-  self._current_moves[n][m].label
+|   for n, m in combo: this code just loops through every avaible click also the code under
+- is_win = (len(results) == 1) and ("" not in results): this code and under just checks if you have won if true loop breaks or not 
+
+step15
+- def has_winner(self):
+    retuen self._has_winner: this just code just checks if anyone have won drawn or lost 
+
+step16
+- def is_tied(self): before this def it checked that there was no winner yet so then it moves to this so its a draw.
+- no_winner = not self._has_winner: this code just makes it true if there is no winner. 
+- played_moves(): this code goes through every row and checks 100% that its a draw
+- move.label for row in self._current_moves for move in row: this is the code that does it over
+- return no_winner and all(played_moves): this code only returnts true if no one have won and it is checked all rows that everything has been clicked and it is a draw. 
+
+step17
+def toggle_player(self)
+    self.current_player = next(self._players): this code toggles player and allows the next to click when one has clicked  
+
+step18
+- def play(self, event): this code is the def and play the event the game basically 
+- clicked_btn = event.widget: this code makes it possible to click from other codes
+- row, col = self._cells[clicked_btn]: goes over the whole 3 by 3 board for clicks then goes to next code
+-  move = move(row, col, self._game.current_player.label): sjekker hvem sin tur det
+- if self._game.is_valid_move(move): denne sjekker om move som ble gjort er valid
+- self._update_button(clicked_btn): hvis move var valid så oppdaterer den og lar neste klikke
+- self._game_process_move(move): denne får alt dette til å kjøre på nytt så når alle ruter er klikket går den videre 
+- if self._game.is_tied():: så skriver jeg hvis game er tied skjer det under i koden ganske simpelt
+    self._update_display(msg="TIED GAME!", color="red")
+- elif self._game.has_winner(): and if it is not tied then there is a winner so then it says the code under current player WON! står det på skjerm altså WON!
+self._highlight_cells()
+msg = f'Player "{self._game.current_player.label}" WON!'
+color = self._game.current_player.color
+self._update_display(msg, color)
+- else: self._game.toggle_player(): hvis ingen har vunnet enda eller uavgjort begynner denne koden og fortsetter spillet videre og denne koden bytter turen mellom x og o
+msg = f"{self._game.current_player.label}'s "
+self._update_display(msg)
+og denne over her oppdaterer displayet til hvem sin tur det er
+
+step19
+button.bind("<ButtonPress-1", self.play): denne koden fungerer sånn at alle rutene reagerer/følger med hvis man museklikker på de og sender også spillet videre til playfunksjoen.
+
+step20
+- def _update_button(self, clicked_btn):this def is making so when you click in a box it actually is a x with the color red 
+- clicked_btn.config(text=self._game.current_player.label): dette er koden som setter x eller o for hvilken player du er
+- clicked_btn.config(fg=self._game_current_player.color):dette er koden som setter fargen for x eller o når du trykker i en rute
+
+step21 
+- def _update_display(self, msg, color="black"):: this def is just the code to tweak the color and style for the display with boxes.
+- self.disply["text"] = msg: denne kode linjen endrer teksten som vises på skjermen
+- self.display["fg"] = color: denne kode linjen endrer bare tekst fargen på displayet. fg st¨år for foreground betyr i programering tekstfarge.
+
+step22
+- def _highlight_cells(self): denne def koden gjør så når du får winner combo vinner du og får highlight bakgrunn i rød
+- for button, coordinates in self._cells.items():
+if coordinates in self._game.winner_combo:: denne koden bare sjekker hvis du har vunnet så skjer dette under
+- button.config(highlightbackground="red"): highlighter det rødt og blir rødt
 
 
 #link til Virtual Environments toturial

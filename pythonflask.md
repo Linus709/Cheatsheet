@@ -16,6 +16,26 @@ def main()
     #denneunderhererikkemustbarehvisjegønskeratdenikkeskalstoppeførjegvilsometspill
     board.mainloop()
 - import flask: imports skal ALLTID være på toppen så koden under får imported greiene!
+- integer: tall i python
+- string: bokstaver i python
+- index: et tall som viser plasseringen til et element i en liste, string, integers osv.
+- brackets: det er parantesene/klammene i eksempel en liste eller kode linjer generelt
+
+arrays
+
+- herskriverduarray.append(detduvilappende): append legger til noe i slutten av din kode så ser sånn ut under her
+frukter = ["eple", "banan"]
+frukter.append("appelsin")
+print(frukter)  # ['eple', 'banan', 'appelsin']
+- return hvasomhelsther: dette vil sende det du skriver foran return i verdi tilbake så ender opp i output/returnvalue. eksempel hvis linus=16 så vil return linus gi 16. denne koden sender verdien også videre i koden så du kan skrive mer
+- for i in range(bestemmtallellerverdi): denne får en loop/løkke til å skje så her kan du putte apend under for og få en ordetnlig løkke. i bokstaven i koden er index for liksom talla du henter fra som den skal starte på eksempel under.
+class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        answer = []
+        for i in range(n):
+            answer.append(nums[i])
+            answer.append(nums[i + n])
+        return answer
 
 
 
