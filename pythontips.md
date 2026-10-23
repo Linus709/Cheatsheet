@@ -36,8 +36,20 @@ class Solution:
             answer.append(nums[i])
             answer.append(nums[i + n])
         return answer
-
-
+- if funksjonsnavn >= endaetfunksjonsnavn: if funksjoen fungerer sånn at hvis det skjer en økning eksempel så vil pengene gå opp sånn kan if funksjonen funke. så det du skriver i midten av tegn definerer om det er høyere lavere eller =.
+- elif: denne funksjonen er akkurat som if bare den neste dørvakten kan man si. den sjekker en ny betingelse bare hvis den forrige betingelsen var usann
+- else: denne komandoen er vanligst og putte på slutten så hvis ingen av if eller elif betingelsene stemte vil else brukes eksempel under
+if temperatur > 25:
+    print("Det er kjempevarmt!")
+elif temperatur > 10:
+    print("Det er mildt ute.")
+elif temperatur > 0:
+    print("Det er kaldt, husk jakke.")
+else:
+    print("Det er minusgrader!") 
+- n = len(navneher): dette er en funksjon som finner ut hvor mange tall som skal være der liste.
+- counter = counter(navnher): denne koden lager en oversikt over tallene
+- loop explained:
 
 
 

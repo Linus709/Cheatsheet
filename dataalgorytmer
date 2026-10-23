@@ -1,0 +1,15 @@
+datastructures
+- datastructures er lagd for ulike scenarioer som bil,fly og busser osv.
+- datastructures kan gå veldig fort og veldig sakte o(n)i andre er sykt sakte
+- o log(n) er ganske rask litt som det speed of sound. hvis man søker opp noe så leter den ikke igjennom alt men går rett til ord søket vet hvor alt er litt som google.
+- De viktigste linærefunksjonene Array, Linked list, stack label, que kø og flere men dette er de viktigste.
+- de tre ikke linære viktigste datatrukturene er tree, binære søketrær og graf.
+- en av key value strukturene er hash table og dette lagrer data veldig viktig.
+finnes ingen perfekt struktur er time vs space.
+
+- more about hashing
+- output is always dependent on the input 
+- same input always has the same output
+- the output is irreversible example add(1, 2) = 3  og add(-12, 15) = 3
+- fixed length output 10,12 er input og summen er 22 og da er 2 outputen siste tall. dette er en enkel hash
+- 
