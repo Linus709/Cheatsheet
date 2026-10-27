@@ -13,3 +13,26 @@ finnes ingen perfekt struktur er time vs space.
 - the output is irreversible example add(1, 2) = 3  og add(-12, 15) = 3
 - fixed length output 10,12 er input og summen er 22 og da er 2 outputen siste tall. dette er en enkel hash
 - 
+
+backend
+- backend håndterer
+- backend: backend er det du ikke ser på nettsiden. når du trykker på en nettside at du skal kjøpe noe
+så vil du sende request til server også går det tilbake til pcen din altså frontend så sendes det til webadressen.
+- for å kjøre nettsiden med backend må man leie en VM fra amazon, google osv for å kjøre backenden på nettsiden. Man trenger også enda en VM server for å kjøre databasen. man kan kjøpe fysisk servere/pcer også for å gjøre noe som dette men er ikke vanlig lenger hvertfall ikke for små bedrifter/nettsider
+- microservices: hvis man har en svær nettside eller mye funksjoner så kan man bruke microservices. da kan du eksempel ha 3 backends som en til payments også en til orders osv.
+
+frontend
+- frontend: frontend er det visuelle du ser på din nettside. Det vanligste og bruke for å legge til bilder, tekst, knapper er html. 
+- Men når du har lagt til bilder, tekst og mer ser det kanskje ikke så bra ut det er da css blir en ting. css styler og former nettsiden din til å bli clean og sånn du vil den skal se ut. 
+- Men når du har gjort dette så trykker du på en knapp som viser bare om den type klær på din nettside men ingenting skjer. Da er javascript det du trenger. javascript gjør så knapper funker og gir nettsiden funksjoner egentlig.
+
+autentisering og autorisering
+
+autentisering er når du sjekker at personen er den de utgir seg for å være
+autorisering sjekker at personen har riktig tilatelse for å gjøre handlingen. for eksempel slette brukere hvis personen er en administrator
+
+
+api koder for å hente informajson med koder
+POST https//webadressenher.www: post betyr å lage noe
+GET https//webadressenher.www: GET betyr og ta noe fra nettsiden
+DELETE https//webadressenher.www: Delete betyr å slette noe fra nettside informasjon
