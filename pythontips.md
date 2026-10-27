@@ -208,31 +208,3 @@ else:
 
 
 
-- PYTHON FLASK
-- from flask import Flask: laster inn flask i koden så den er med og husk pip install flask at du har det lagra på fila.
-- if __name__ == "__main__":
-    app.run(debug=True)
-    denne koden må du ha på bunnen hvis du vil kjøre nettsiden
-- app = Flask(__name__): bare must for å få det til å fungere
-- @app.route("/skrivhvaduvilherelleringenting")
-def index():
-    return ("yooo") 
-    denne koden er ikke must men egentlig. her skriver du det som skal ende opp på nettsiden og ha flere av disse app routes hvis det skal være flere faner med information.
-
-
-- templates: dette bruker vi for å kombinere html med python på nettsiden. foran return så kan du da skrive render_template('index.html') dette for å bruke html filen på nettsiden i app routes.
-- from flask import Flask, render_template: hvis du skal ha templates med flask gjør det sånn på toppen!
-
-- database: dette er lagringen til nettsiden den gjør så nettsiden husker. henter  også data, oppdaterer og sletter data.
-- from flask_sqlalchemy import SQLAlchemy: dette laster ned en database som jeg kan bruke
-- app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///kalldethvaduvil.db'
-db = SQLAlchemy(app)
-putt dette under flask name fordi dette gjør så jeg faktisk har en database på nettsiden.
--   
-
-sql explained
-- 
-
-
-    
-
