@@ -31,6 +31,14 @@ CODE USED FOR SQL
 - LEFT JOIN: this code can connect the data like example a person with a club which would be a primary key and foreign key look under how it could look
 LEFT JOIN Teams ON players.team_id = Teams.id;
 - this whole code would create a statement in the database
+
+hashing explained
+- hashing: dette brukes til og skjule passord enda bedre. og den tar en string som passord med data til noe helt random output string length.
+- dictonary attack: dictonary attack er et vanlig angrep hvor man gjetter common passwords
+- bruteforce attack: bruteforce attack er mye drøyere da skal man gjette alle mulige kombinasjoner av karakterene. dette kan ta veldig lang tid og er også basically umulig i tilfeller
+bcrypt
+- bcrypt: is the import hashing method i am using to hash my password and it has salt which makes it easier.
+- salt: salt makes all the password uniqe like the hashing.
  
 
 
