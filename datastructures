@@ -28,8 +28,8 @@ frontend
 
 autentisering og autorisering
 
-autentisering er når du sjekker at personen er den de utgir seg for å være
-autorisering sjekker at personen har riktig tilatelse for å gjøre handlingen. for eksempel slette brukere hvis personen er en administrator
+- autentisering: er når du sjekker at personen er den de utgir seg for å være
+- autorisering: sjekker at personen har riktig tilatelse for å gjøre handlingen. for eksempel slette brukere hvis personen er en administrator
 
 
 api koder for å hente informajson med koder

@@ -9,6 +9,7 @@ terminal windows
 - move filnavn: hvor den skal flyttes til
 - tree: viser hva som er inne i mappen din
 - tree /f: viser tydelig mer av mappen din
+- ping nrk.no: sjekker om du har internett
 
 SSH terminal windows
 - ssh-keygen -t ed25519 -C "linusjegleimlirhus@gmail.com": lager ssh key 

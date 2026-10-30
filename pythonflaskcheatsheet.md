@@ -8,6 +8,10 @@
 def index():
     return ("yooo") 
     denne koden er ikke must men egentlig. her skriver du det som skal ende opp på nettsiden og ha flere av disse app routes hvis det skal være flere faner med information.
+- return redirect("/filnavnher"): veldig sjekk komando i slutten av en kode for og returnere eksempel en knapp som har blitt trykket og ikke bli sendt til basepage men bli på samme. 
+- return render_template("home.html, blabla"): denne koden funker likt bare kan ha med mer som en total av noe, sum, liste osv. eksempel under
+return render_template("home.html", total=bank.total)
+- 
 
 
 - templates: dette bruker vi for å kombinere html med python på nettsiden. foran return så kan du da skrive render_template('index.html') dette for å bruke html filen på nettsiden i app routes.
@@ -30,7 +34,11 @@ CODE USED FOR SQL
 - WHERE: this code can be used to filter how many rows you want and this is like looping over every row in the table. 
 - LEFT JOIN: this code can connect the data like example a person with a club which would be a primary key and foreign key look under how it could look
 LEFT JOIN Teams ON players.team_id = Teams.id;
-- this whole code would create a statement in the database
+- from flask_sqlalchemy import SQLAlchemy:THIS CODE AT TOP TO IMPORT SQLALchemy with flask combined
+- db.session.commit: this code is used a lot it updates terminal always have it at the bottom of the code to get every information into database commited. 
+- with app.app_context():
+    db.create_all(): denne koden vil lage databasen til sql med flask automatisk sikkert lurt og starte den første gang selv men så er det good ha den på bunnen av koden men ikke under name main.
+
 
 hashing explained
 - hashing: dette brukes til og skjule passord enda bedre. og den tar en string som passord med data til noe helt random output string length.

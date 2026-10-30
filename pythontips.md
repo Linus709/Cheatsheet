@@ -205,6 +205,14 @@ else:
 - n = len(navneher): dette er en funksjon som finner ut hvor mange tall som skal være der liste.
 - counter = counter(navnher): denne koden lager en oversikt over tallene
 
+METHOD POST AND GET
+GET: The get method requests for data and retrives data from a server/database/templates. 
+POST: Post is used to send data to a server/website/database/osv. it also is used to delete, update, create and like submitting a login form. 
+
+
+
+
+
 
 
 
