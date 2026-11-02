@@ -16,6 +16,7 @@
 - users = {"bob": 1, "james": 2} dette er dictonary og de er samlet sammen altså bob 1 og james 2
 
 
+BASICS UNDER AV PYTHON
 
 - eksempel av integer og strings sammen
 integer = 2000
@@ -156,9 +157,9 @@ print(tan(2)) flere fra spesefik import
 
 
 
-koder
+KODER LITT MER KOMPLISERTE OG SPESEFIKE
 
-- render_template: templates gjør så jeg kan redigere nettsider med html og ikke bare ha hello world
+
 - class skrivhvaduvilher(skrivhvilkenimporther):: dette er koden for og lage en class som er på måte sjefen over hele koden hva det du har under skal være er det class burde hete. også huske og spesifisere hvilke import jeg bruker i classen jeg skriver kode i.
 - def _eksempel_det_her(self): dette legges på under en def for og videre utvikle noe du lager som et spill, nettside, funksjon osv. men må ikke være en kode fra class kan stå hva som helst foran def så lenge det er under classen.
 - if __name__ == "__main__":
@@ -171,12 +172,25 @@ def main()
     #denneunderhererikkemustbarehvisjegønskeratdenikkeskalstoppeførjegvilsometspill
     board.mainloop()
 - import flask: imports skal ALLTID være på toppen så koden under får imported greiene!
-- integer: tall i python
-- string: bokstaver i python
 - index: et tall som viser plasseringen til et element i en liste, string, integers osv.
 - brackets: det er parantesene/klammene i eksempel en liste eller kode linjer generelt
+- unique: denne funksjonen gjør så hvis noe gjentas vil det ikke havne ut på nettsiden eksempel 1122 så vil bare 1 2 bli printet ut
 
-arrays
+
+FUNCTIONS
+- return redirect("/skrivhvilkenpageher"): veldig sjekk kode og ha i slutten gjør så koden har noe og returnere til. 
+- nullable: funksjonen nullable lar data typer holde spesielle verdier kalt null. null skal representere en value eller ikke verdiløst variabel. man bruker dette til og unngå kræsj som på nettsider og nyttig med databaser hvor noen verdier ikke er tilgjengelig osv. 
+- primary key: denne funksjoen er veldig nice til databaser den lager en kombinasjon av kolonner som definere hver eneste rad med eksempel tall id 1 for rad 1 osv.
+- render_template: templates gjør så jeg kan redigere nettsider med html og ikke bare ha hello world
+
+
+METHODS
+- password.isdigit(): denne koden vil sjekke om passord er tall/integer og password er bare eks kan stå noe annet.
+- password.isalpha(): denne sjekker om det er mellomrom eller tall fordi det er ikke tillat så er password bare eks igjen
+- db.session.commit(): veldig vikitig i sql database flask får og returnere det som skal havne i databasen.
+- db.session.delete(): denne er for å slette så eks user at du sletter bare husk at du må ha query før delete method funker.
+
+ARRAYS
 
 - herskriverduarray.append(detduvilappende): append legger til noe i slutten av din kode så ser sånn ut under her
 frukter = ["eple", "banan"]
@@ -204,6 +218,8 @@ else:
     print("Det er minusgrader!") 
 - n = len(navneher): dette er en funksjon som finner ut hvor mange tall som skal være der liste.
 - counter = counter(navnher): denne koden lager en oversikt over tallene
+
+
 
 METHOD POST AND GET
 GET: The get method requests for data and retrives data from a server/database/templates. 

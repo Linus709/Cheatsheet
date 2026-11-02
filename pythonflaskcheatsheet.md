@@ -48,6 +48,9 @@ bcrypt
 - bcrypt: is the import hashing method i am using to hash my password and it has salt which makes it easier.
 - salt: salt makes all the password uniqe like the hashing.
  
+- clear seltte hele datavasefilen fra terminal
+Remove-Item instance/navnpådatabaseher.db: denne vil slette hele databasen også når du kjører nettsiden igjen dukker databasen opp fresh igjen. husk og gjøre det i powershell helst funker best der.
+
 
 
     
