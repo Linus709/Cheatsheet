@@ -190,6 +190,13 @@ METHODS
 - db.session.commit(): veldig vikitig i sql database flask får og returnere det som skal havne i databasen.
 - db.session.delete(): denne er for å slette så eks user at du sletter bare husk at du må ha query før delete method funker.
 
+IMPORTS
+- FROM wtforms.validators import DataRequired: denne er populær import i python. it is used for form rendering, validation and data processing ofte brukt i Flask. validators er for å sjekke om en user har submitted data riktig og etter regler. datarequeried betyr at hvis du prøver å logge inn eller lage user må du skrive noe.
+from flask import Flask: denne må stå i koden hvis jeg vil ha flask nettside oppe med kode under og templates osv. 
+- import bcrypt: denne er essetial hvis jeg vil hashe greier så ha dennne på toppen. 
+- from datetime import datetime: denne importen gir meg direkte tiden/klokkeslett her jeg er nå hvis jeg vil ha det.
+- from flask_sqlalchemy import SQLAlchemy: denne er veldig viktig vis jeg vil ha databaser så vil jeg bruke dette.
+
 ARRAYS
 
 - herskriverduarray.append(detduvilappende): append legger til noe i slutten av din kode så ser sånn ut under her
@@ -224,9 +231,6 @@ else:
 METHOD POST AND GET
 GET: The get method requests for data and retrives data from a server/database/templates. 
 POST: Post is used to send data to a server/website/database/osv. it also is used to delete, update, create and like submitting a login form. 
-
-
-
 
 
 
