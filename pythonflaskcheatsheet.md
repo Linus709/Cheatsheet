@@ -48,9 +48,14 @@ bcrypt
 - bcrypt: is the import hashing method i am using to hash my password and it has salt which makes it easier.
 - salt: salt makes all the password uniqe like the hashing.
  
-- clear seltte hele datavasefilen fra terminal
-Remove-Item instance/navnpådatabaseher.db: denne vil slette hele databasen også når du kjører nettsiden igjen dukker databasen opp fresh igjen. husk og gjøre det i powershell helst funker best der.
 
+SQLALCHEMY NICE GREIER
+Remove-Item instance/navnpådatabaseher.db: denne vil slette hele databasen også når du kjører nettsiden igjen dukker databasen opp fresh igjen. husk og gjøre det i powershell helst funker best der.
+HVORDAN RESET SQLALCHEMY MEMORY
+- from FILNAVNPÅPYTHONMAPPEHER import app, db: kjør denne først SER SÅNN UT >>> from main import app, db
+- with app.app_context():
+...     db.drop_all()
+...     db.create_all()     denne er for og fjerne alt husk dette må være i powershell og python skrives i starten.
 
 
     
