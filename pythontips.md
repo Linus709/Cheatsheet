@@ -185,10 +185,18 @@ FUNCTIONS
 
 
 METHODS
+METHOD POST AND GET
+GET: The get method requests for data and retrives data from a server/database/templates. 
+POST: Post is used to send data to a server/website/database/osv. it also is used to delete, update, create and like submitting a login form. 
+
 - password.isdigit(): denne koden vil sjekke om passord er tall/integer og password er bare eks kan stå noe annet.
 - password.isalpha(): denne sjekker om det er mellomrom eller tall fordi det er ikke tillat så er password bare eks igjen
 - db.session.commit(): veldig vikitig i sql database flask får og returnere det som skal havne i databasen.
 - db.session.delete(): denne er for å slette så eks user at du sletter bare husk at du må ha query før delete method funker.
+- if request.method == "POST": dette er en genial måtte og bruke knapper på å variabler som er det jeg brukte det til. under kan du skrive hva som skjer når du trykker på den knappen så kan se ut som det under
+if request.method == "POST":
+        Money = request.form.get("Money")
+
 
 IMPORTS
 - FROM wtforms.validators import DataRequired: denne er populær import i python. it is used for form rendering, validation and data processing ofte brukt i Flask. validators er for å sjekke om en user har submitted data riktig og etter regler. datarequeried betyr at hvis du prøver å logge inn eller lage user må du skrive noe.
@@ -226,13 +234,15 @@ else:
 - n = len(navneher): dette er en funksjon som finner ut hvor mange tall som skal være der liste.
 - counter = counter(navnher): denne koden lager en oversikt over tallene
 
-
-
-METHOD POST AND GET
-GET: The get method requests for data and retrives data from a server/database/templates. 
-POST: Post is used to send data to a server/website/database/osv. it also is used to delete, update, create and like submitting a login form. 
-
-
-
+CLASS FORKLART
+Class User(db.Model): dette er et eksempel til en class som er vanlig og starte med. class heter User og alt under som skriver holder til i User class. man kunne skrevet i dette eksemplet username, password id osv siden dbmodel er databasen så classen brukes i det. 
+eksemepl
+id = db.Column(db.Integer, primary_key=True)
+    # lagrer data i kolonner/column i id tall/integer
+    username = db.Column(db.String(150), unique=True, nullable=False)
+    # lagrer data i kolonner/column i username string
+    password = db.Column(db.String(255), nullable=False)
+    #lagrer data i kolonner/column i password string
+innenfor class kan defs brukes for på måte og legge til flere class men innefor User så kan bil lang kode innenfor User.
 
 
