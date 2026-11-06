@@ -246,3 +246,5 @@ id = db.Column(db.Integer, primary_key=True)
 innenfor class kan defs brukes for på måte og legge til flere class men innefor User så kan bil lang kode innenfor User.
 
 
+
+

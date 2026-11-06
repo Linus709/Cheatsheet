@@ -46,7 +46,7 @@ hashing explained
 - bruteforce attack: bruteforce attack er mye drøyere da skal man gjette alle mulige kombinasjoner av karakterene. dette kan ta veldig lang tid og er også basically umulig i tilfeller
 bcrypt
 - bcrypt: is the import hashing method i am using to hash my password and it has salt which makes it easier.
-- salt: salt makes all the password uniqe like the hashing.
+- salt: salt is a random 128bit(16 byte) string added to a plain text before it is hashed. if two users have the same password salt can make thos to hashed different. because salt makes each password uniqe whatever the password is then hackers cannot use precomputed lookup tables for common hashes.
  
 
 SQLALCHEMY NICE GREIER
