@@ -23,3 +23,13 @@ vanlig bruk etter oppsett av repo(altså oppdatere endringer osv)
 - git commit -m "skriv noe her"
 - git push
 
+
+kloning av repos
+- cd mappenavnduvilklonetil
+- git clone linkher.com
+
+
+hvis ssh ikke funker pga port
+cd .ssh: åpner ssh
+notepad config: viser hvordan ssh filen er
+ssh -T git@github.com: skriv dette når du har fiksa notepad med port og husk control save/s
