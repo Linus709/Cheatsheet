@@ -18,3 +18,19 @@ WHERE ar > 2015
 
 mariadb TERMINAL
 mariadb -u root -p: 
+
+mer komandoer
+CREATE DATABASE TABELLNAVNHER; denne lager databasen inne i useren på mariadb
+USE TABELLNAVNHER; denne intialiserer databasen med tabellen
+
+
+
+LINUX:
+
+hvordan få mariadb på linux/pi-en min
+- sudo apt update: viktig og kjøre først
+- sudo apt install mariadb-server: laster ned mariadb server
+- sudo apt install mariadb-client: (Kun hvis du vil bruke grensesnittet på pi)
+- sudo systemctl start mariadb: starter system server
+- sudo systemctl enable mariadb: enabler system server
+- sudo mariadb: starter altså får meg inn i mariadb
